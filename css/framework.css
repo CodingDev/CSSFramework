@@ -32,6 +32,9 @@ a {
 	color: #3498db;
 	text-decoration: none;
 }
+a:hover {
+	text-decoration: underline;
+}
 p {
 	margin: 10px 0;
 }
@@ -118,10 +121,6 @@ small {
 	border: none;
 	border-bottom: #000000 solid 3px;
 	border-radius: 2px;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
 	font-size: 1em;
 	cursor: pointer;
 	font-weight: 300;
@@ -135,6 +134,7 @@ button[type="button"] {
 }
 .button:hover {
 	background: #000000;
+	text-decoration: none;
 }
 .button.blue {
 	color: #fff;
@@ -266,4 +266,33 @@ input[type="checkbox"]:checked + span:before {
 ***********************************************************/
 .sourcecode {
 	display: none;
+}
+/***********************************************************
+* Table                                                    *
+***********************************************************/
+.table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.table th {
+	text-align: left;
+}
+
+.table thead tr td, .table thead tr th {
+	padding: 10px 10px;
+	border-bottom: #eee solid 3px;
+}
+.table td, .table th {
+	padding: 10px 10px;
+	border-top: #eee solid 1px;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+	border-top: 0;
 }
