@@ -12,7 +12,9 @@
   <body>	
 	<div class="container">
 		<!-- Grid -->
-		<h1>Grid</h1>
+		<div class="header">
+			<h1>Grid <small onclick="sourcecode('grid');">View HTML-Code</small></h1>
+		</div>
 		
 		<div class="grid">
 			<div class="grid-12">
@@ -48,8 +50,7 @@
 			</div>
 		</div>
 		
-		<p>HTML-Code</p>
-		<code>
+		<code class="sourcecode">
 			&lt;div class=&quot;grid&quot;&gt;<br />
 			&nbsp;&nbsp; &nbsp;&lt;div class=&quot;grid-8&quot;&gt;<br />
 			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class=&quot;color&quot;&gt;grid-8&lt;/div&gt;<br />
@@ -62,7 +63,9 @@
 		</code>
 		
 		<!-- Buttons -->
-		<h1>Buttons</h1>
+		<div class="header">
+			<h1>Buttons <small onclick="sourcecode('buttons');">View HTML-Code</small></h1>
+		</div>
 		
 		<a href="" class="button">Button</a>
 		<a href="" class="button blue">Button</a>
@@ -70,8 +73,7 @@
 		<a href="" class="button yellow">Button</a>
 		<a href="" class="button red">Button</a><br /><br />
 		
-		<p>HTML-Code</p>
-		<code>
+		<code class="sourcecode">
 			&lt;!-- Default Button --&gt;<br />
 			&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Button&lt;/a&gt;
 			<br /><br />
@@ -89,14 +91,19 @@
 		</code>
 		
 		<!-- Code -->
-		<h1>Code</h1>
+		<div class="header">
+			<h1>Code <small onclick="sourcecode('code');">View HTML-Code</small></h1>
+		</div>
+		
 		<code>Type some code...</code>
 		
-		<p>HTML-Code</p>
-		<code>&lt;code&gt;...&lt;/code&gt;</code>
+		<code class="sourcecode">&lt;code&gt;...&lt;/code&gt;</code>
 		
 		<!-- Form -->
-		<h1>Form</h1>
+		<div class="header">
+			<h1>Form <small onclick="sourcecode('form');">View HTML-Code</small></h1>
+		</div>
+		
 		<form class="form">
 			<input type="email" placeholder="Email">
 			<input type="password" placeholder="Password">
@@ -109,8 +116,7 @@
 			<button type="submit" class="button blue">Sign in</button>
 		</form>
 		
-		<p>HTML-Code</p>
-		<code>
+		<code id="sourcecode" class="sourcecode">
 			&lt;form&gt;<br />
 			&nbsp;&nbsp; &nbsp;&lt;input type=&quot;email&quot; placeholder=&quot;Email&quot;&gt;<br />
 			&nbsp;&nbsp; &nbsp;&lt;input type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;<br />
