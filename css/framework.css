@@ -27,7 +27,12 @@ p {
 /* Container */
 .container {
 	margin: 15px auto;
-	width: 1000px;
+	width: 80%;
+}
+@media (max-width: 768px) {
+	.container {
+		width: 98%;
+	}
 }
 
 /* Grid */
