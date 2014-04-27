@@ -153,6 +153,7 @@ code {
 /* Form */
 form {
 	display: block;
+	width: 100%;
 }
 input {
 	color: #444;
@@ -164,6 +165,9 @@ input {
 	display: block;
 	width: 100%;
 	outline: 0;
+	box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
 }
 label {
 	display: block;
