@@ -143,11 +143,11 @@ small {
 * Button                                                   *
 ***********************************************************/
 .button {
-	color: #fff;
+	color: #000;
 	padding: 5px 15px 5px 15px;
 	margin-bottom: 10px;
-	background: #555555;
-	border: #000000 solid 1px;
+	background: #eee;
+	border: #ccc solid 1px;
 	border-radius: 2px;
 	font-size: 1em;
 	cursor: pointer;
@@ -161,8 +161,16 @@ button[type="button"] {
 	font-size: 1em;
 }
 .button:hover {
-	background: #000000;
+	background: #ccc;
 	text-decoration: none;
+}
+.button.black {
+	color: #fff;
+	background: #555555;
+	border-color: #000000;
+}
+.button.black:hover {
+	background: #000000;
 }
 .button.blue {
 	color: #fff;
@@ -212,16 +220,16 @@ button[type="button"] {
 	width: 16px;
 	text-align: center;
 }
-.alert.error {
+.alert.red {
 	background: #e65b46;
 }
-.alert.success {
+.alert.green {
 	background: #49a775;
 }
-.alert.info {
+.alert.blue {
 	background: #45b5e5;
 }
-.alert.warning {
+.alert.yellow {
 	background: #ffb400;
 }
 /***********************************************************
