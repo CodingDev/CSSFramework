@@ -9,9 +9,12 @@
 body {
 	font-family: 'Open Sans', 'sans-serif';
 }
-
 h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 15px;
+}
+a {
+	color: #3498db;
+	text-decoration: none;
 }
 
 /* Container */
@@ -62,4 +65,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 .grid-1 {
 	width: 8.33333333%;
+}
+
+/* Buttons */
+
+.button {
+	color: #444;
+	padding: 5px 7px;
+	background: #eee;
+	border: #999 solid 1px;
+	border-radius: 3px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.button:hover {
+	background: #ccc;
+}
+.button.blue {
+	color: #fff;
+	background: #3498db;
+	border-color: #2980b9;
+}
+.button.blue:hover {
+	background: #2980b9;
+}
+.button.green {
+	color: #fff;
+	background: #2ecc71;
+	border-color: #27ae60;
+}
+.button.green:hover {
+	background: #27ae60;
+}
+.button.yellow {
+	color: #fff;
+	background: #f1c40f;
+	border-color: #f39c12;
+}
+.button.yellow:hover {
+	background: #f39c12;
+}
+.button.red {
+	color: #fff;
+	background: #e74c3c;
+	border-color: #c0392b;
+}
+.button.red:hover {
+	background: #c0392b;
 }
