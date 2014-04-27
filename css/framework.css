@@ -6,11 +6,14 @@
 * GitHub: 		https://github.com/CodingDev/CSSFramework  *
 ***********************************************************/
 
-/* Fonts */
+/***********************************************************
+* Fonts                                                    *
+***********************************************************/
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800);
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-
-/* Main */
+/***********************************************************
+* Main                                                     *
+***********************************************************/
 * {
 	margin: 0;
 	padding: 0;
@@ -36,14 +39,17 @@ small {
 	color: #999;
 	font-size: 50%;
 }
-
-
+/***********************************************************
+* Header                                                   *
+***********************************************************/
 .header {
 	border-bottom: #eee solid 1px;
 	margin-bottom: 15px;
 }
 
-/* Container */
+/***********************************************************
+* Container                                                *
+***********************************************************/
 .container {
 	margin: 15px auto;
 	width: 80%;
@@ -53,8 +59,9 @@ small {
 		width: 98%;
 	}
 }
-
-/* Grid */
+/***********************************************************
+* Grid                                                     *
+***********************************************************/
 .grid:before,
 .grid:after {
 	display: table;
@@ -100,8 +107,9 @@ small {
 .grid-1 {
 	width: 8.33333333%;
 }
-
-/* Button */
+/***********************************************************
+* Button                                                   *
+***********************************************************/
 .button {
 	color: #fff;
 	padding: 5px 15px 3px 15px;
@@ -160,8 +168,9 @@ button[type="button"] {
 .button.red:hover {
 	background: #bf0008;
 }
-
-/* Alert */
+/***********************************************************
+* Alert                                                    *
+***********************************************************/
 .alert {
 	color: #fff;
 	padding: 5px 15px 5px 15px;
@@ -193,8 +202,9 @@ button[type="button"] {
 	background: #fc000b;
 	border-color: #bf0008;
 }
-
-/* Code */
+/***********************************************************
+* Code                                                     *
+***********************************************************/
 code {
 	font-family:courier new,courier,monospace;
 	border: #eee solid 1px;
@@ -204,8 +214,9 @@ code {
 	margin: 15px 0;
 	display: block;
 }
-
-/* Form */
+/***********************************************************
+* Form                                                     *
+***********************************************************/
 form {
 	display: block;
 	width: 100%;
@@ -228,8 +239,6 @@ label {
 	display: block;
 	padding: 10px 0;
 }
-
-/* Radio & Checkbox */
 input[type="radio"],
 input[type="checkbox"] {
 	display:none;
@@ -252,9 +261,9 @@ input[type="checkbox"] + span:before {
 input[type="checkbox"]:checked + span:before {
 	content: "\f14a"; /* check */
 }
-
-/* Sourcecode */
-
+/***********************************************************
+* Sourcecode                                               *
+***********************************************************/
 .sourcecode {
 	display: none;
 }
