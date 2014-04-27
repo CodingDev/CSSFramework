@@ -1,7 +1,8 @@
-/* fonts */
-@import url(https://fonts.googleapis.com/css?family=open+sans);
+/* Fonts */
+@import url(//fonts.googleapis.com/css?family=open+sans);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
-/* main */
+/* Main */
 * {
 	margin: 0;
 	padding: 0;
@@ -23,13 +24,13 @@ a {
 p {
 	margin: 10px 0;
 }
-/* container */
+/* Container */
 .container {
 	margin: 15px auto;
 	width: 1000px;
 }
 
-/* grid */
+/* Grid */
 .grid:before,
 .grid:after {
 	display: table;
@@ -133,7 +134,7 @@ button[type="button"] {
 	background: #c0392b;
 }
 
-/* code */
+/* Code */
 code {
 	font-family:courier new,courier,monospace;
 	border: #eee solid 1px;
@@ -142,4 +143,48 @@ code {
 	padding: 10px 7px;
 	margin: 15px 0;
 	display: block;
+}
+
+/* Form */
+form {
+	display: block;
+}
+input {
+	color: #444;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	background: #fdfdfd;
+	border: #e1edf3 solid 1px;
+	border-radius: 2px;
+	display: block;
+	width: 100%;
+	outline: 0;
+}
+label {
+	display: block;
+	padding: 10px 0;
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  display:none;
+}
+input[type="radio"] + span:before,
+input[type="checkbox"] + span:before {
+  font-family: 'FontAwesome';
+  padding-right: 3px;
+  font-size: 20px;
+}
+input[type="radio"] + span:before {
+  content: "\f10c"; /* circle-blank */
+}
+input[type="radio"]:checked + span:before {
+  content: "\f111"; /* circle */
+}
+input[type="checkbox"] + span:before {
+  content: "\f096"; /* check-empty */
+}
+input[type="checkbox"]:checked + span:before {
+  content: "\f14a"; /* check */
 }
