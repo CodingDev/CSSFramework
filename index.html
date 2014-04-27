@@ -5,6 +5,14 @@
     <title>CSSFramework</title>
     <!-- CSSFramework -->
 	<link href="css/framework.css" rel="stylesheet">
+	
+	<!-- video.js must be in the <head> for older IEs to work. -->
+	<script src="js/video.js"></script>
+
+	<!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+	<script>
+		videojs.options.flash.swf = "swf/video-js.swf";
+	</script>
     
 	<!-- Only for Debug -->
 	<link href="css/debug.css" rel="stylesheet">
@@ -116,10 +124,10 @@
 		</div>
 		
 		<form class="form">
-			<input type="email" placeholder="Email">
-			<input type="password" placeholder="Password">
+			<input type="email" class="input" placeholder="Email">
+			<input type="password" class="input" placeholder="Password">
 
-			<label>
+			<label class="checkbox">
 			  <input type="checkbox" value="doggie"/>
 			  <span>Yes, I agree!</span>
 			</label>
@@ -175,6 +183,17 @@
 		</table>
 		
 		<code class="sourcecode">&lt;code&gt;...&lt;/code&gt;</code>
+		
+		<!-- Video -->
+		<div class="header">
+			<h1>Video <small onclick="sourcecode('code');">View HTML-Code</small></h1>
+		</div>
+		
+		<center>
+			<video id="video" class="video-js vjs-cssframework-skin" controls width="720px" height="405px" poster="video.png" data-setup='{ "autoplay": false, "techOrder": ["flash"] }'>
+				<source src="Fractal.mp4" type='video/mp4'>
+			</video>		
+		</center>
 	</div>
   </body>
 </html>

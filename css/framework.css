@@ -7,10 +7,11 @@
 ***********************************************************/
 
 /***********************************************************
-* Fonts                                                    *
+* Import                                                    *
 ***********************************************************/
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800);
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(video-js.css);
 /***********************************************************
 * Main                                                     *
 ***********************************************************/
@@ -217,11 +218,11 @@ code {
 /***********************************************************
 * Form                                                     *
 ***********************************************************/
-form {
+.form {
 	display: block;
 	width: 100%;
 }
-input {
+.input {
 	color: #444;
 	padding: 10px 15px;
 	margin-bottom: 10px;
@@ -235,30 +236,31 @@ input {
     -webkit-box-sizing:border-box;
     -moz-box-sizing: border-box;
 }
-label {
+.checkbox, 
+.radio {
 	display: block;
 	padding: 10px 0;
 }
-input[type="radio"],
-input[type="checkbox"] {
+.radio > input[type="radio"],
+.checkbox > input[type="checkbox"] {
 	display:none;
 }
-input[type="radio"] + span:before,
-input[type="checkbox"] + span:before {
+.radio > input[type="radio"] + span:before,
+.checkbox > input[type="checkbox"] + span:before {
 	font-family: 'FontAwesome';
 	padding-right: 3px;
 	font-size: 20px;
 }
-input[type="radio"] + span:before {
+.radio > input[type="radio"] + span:before {
 	content: "\f10c"; /* circle-blank */
 }
-input[type="radio"]:checked + span:before {
+.radio > input[type="radio"]:checked + span:before {
 	content: "\f111"; /* circle */
 }
-input[type="checkbox"] + span:before {
+.checkbox > input[type="checkbox"] + span:before {
 	content: "\f096"; /* check-empty */
 }
-input[type="checkbox"]:checked + span:before {
+.checkbox > input[type="checkbox"]:checked + span:before {
 	content: "\f14a"; /* check */
 }
 /***********************************************************
