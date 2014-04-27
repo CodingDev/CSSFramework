@@ -18,6 +18,9 @@
 * {
 	margin: 0;
 	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 body {
 	font-family: 'open sans', 'sans-serif';
@@ -56,7 +59,7 @@ small {
 ***********************************************************/
 .container {
 	margin: 15px auto;
-	width: 80%;
+	width: 1000px;
 }
 @media (max-width: 768px) {
 	.container {
@@ -64,17 +67,42 @@ small {
 	}
 }
 /***********************************************************
+* Special                                                  *
+***********************************************************/
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+/***********************************************************
 * Grid                                                     *
 ***********************************************************/
+.grid {
+	margin-right: -15px;
+	margin-left: -15px;
+}
 .grid:before,
 .grid:after {
 	display: table;
-	content: "";
+	content: " ";
+}
+.grid:after {
+	clear: both;
 }
 .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
 	float: left;
+	min-height: 1px;
 	margin-bottom: 15px;
-}
+	padding-left: 15px;
+	padding-right: 15px;
+}	
 .grid-12 {
 	width: 100%;
 }
