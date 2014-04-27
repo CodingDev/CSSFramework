@@ -144,11 +144,10 @@ small {
 ***********************************************************/
 .button {
 	color: #fff;
-	padding: 5px 15px 3px 15px;
+	padding: 5px 15px 5px 15px;
 	margin-bottom: 10px;
 	background: #555555;
-	border: none;
-	border-bottom: #000000 solid 3px;
+	border: #000000 solid 1px;
 	border-radius: 2px;
 	font-size: 1em;
 	cursor: pointer;
@@ -158,7 +157,7 @@ input[type="submit"],
 input[type="button"],
 button[type="submit"],
 button[type="button"] {
-	padding: 7px 15px 5px 15px;
+	padding: 7px 15px 7px 15px;
 	font-size: 1em;
 }
 .button:hover {
@@ -167,7 +166,7 @@ button[type="button"] {
 }
 .button.blue {
 	color: #fff;
-	background: #00b4ff;
+	background: #45b5e5;
 	border-color: #008cc6;
 }
 .button.blue:hover {
@@ -175,7 +174,7 @@ button[type="button"] {
 }
 .button.green {
 	color: #fff;
-	background: #0ec281;
+	background: #49a775;
 	border-color: #0a9764;
 }
 .button.green:hover {
@@ -183,7 +182,7 @@ button[type="button"] {
 }
 .button.yellow {
 	color: #fff;
-	background: #ffa800;
+	background: #ffb400;
 	border-color: #cc8600;
 }
 .button.yellow:hover {
@@ -191,7 +190,7 @@ button[type="button"] {
 }
 .button.red {
 	color: #fff;
-	background: #fc000b;
+	background: #e65b46;
 	border-color: #bf0008;
 }
 .button.red:hover {
@@ -205,31 +204,25 @@ button[type="button"] {
 	padding: 5px 15px 5px 15px;
 	margin-bottom: 10px;
 	background: #555555;
-	border: none;
-	border-left: #000000 solid 3px;
 	border-radius: 2px;
 	font-size: 1em;
 	font-weight: 300;
 }
-.alert.blue {
-	color: #fff;
-	background: #00b4ff;
-	border-color: #008cc6;
+.alert > .fa {
+	width: 16px;
+	text-align: center;
 }
-.alert.green {
-	color: #fff;
-	background: #0ec281;
-	border-color: #0a9764;
+.alert.error {
+	background: #e65b46;
 }
-.alert.yellow {
-	color: #fff;
-	background: #ffa800;
-	border-color: #cc8600;
+.alert.success {
+	background: #49a775;
 }
-.alert.red {
-	color: #fff;
-	background: #fc000b;
-	border-color: #bf0008;
+.alert.info {
+	background: #45b5e5;
+}
+.alert.warning {
+	background: #ffb400;
 }
 /***********************************************************
 * Code                                                     *
@@ -237,7 +230,7 @@ button[type="button"] {
 code {
 	font-family:courier new,courier,monospace;
 	border: #eee solid 1px;
-	border-left: #999 solid 3px;
+	border-left: #555555 solid 3px;
 	background: #f8f8f8;
 	padding: 10px 7px;
 	margin: 15px 0;
