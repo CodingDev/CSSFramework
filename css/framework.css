@@ -161,6 +161,39 @@ button[type="button"] {
 	background: #bf0008;
 }
 
+/* Alert */
+.alert {
+	color: #fff;
+	padding: 5px 15px 5px 15px;
+	margin-bottom: 10px;
+	background: #555555;
+	border: none;
+	border-left: #000000 solid 3px;
+	border-radius: 2px;
+	font-size: 1em;
+	font-weight: 300;
+}
+.alert.blue {
+	color: #fff;
+	background: #00b4ff;
+	border-color: #008cc6;
+}
+.alert.green {
+	color: #fff;
+	background: #0ec281;
+	border-color: #0a9764;
+}
+.alert.yellow {
+	color: #fff;
+	background: #ffa800;
+	border-color: #cc8600;
+}
+.alert.red {
+	color: #fff;
+	background: #fc000b;
+	border-color: #bf0008;
+}
+
 /* Code */
 code {
 	font-family:courier new,courier,monospace;
